@@ -1,0 +1,5 @@
+bluepyopt.electrical.locations
+==============================
+
+.. automodule:: bluepyopt.electrical.locations
+   :members:           

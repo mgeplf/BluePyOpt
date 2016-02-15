@@ -1,0 +1,5 @@
+bluepyopt.electrical.stimuli
+============================
+
+.. automodule:: bluepyopt.electrical.stimuli
+   :members:           

@@ -1,0 +1,5 @@
+bluepyopt.electrical.protocols
+==============================
+
+.. automodule:: bluepyopt.electrical.protocols
+   :members:           

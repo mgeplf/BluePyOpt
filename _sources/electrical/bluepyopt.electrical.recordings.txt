@@ -1,0 +1,5 @@
+bluepyopt.electrical.recordings
+===============================
+
+.. automodule:: bluepyopt.electrical.recordings
+   :members:           

@@ -1,0 +1,5 @@
+bluepyopt.electrical.objectives
+===============================
+
+.. automodule:: bluepyopt.electrical.objectives
+   :members:           

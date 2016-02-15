@@ -1,0 +1,5 @@
+bluepyopt.electrical.morphologies
+=================================
+
+.. automodule:: bluepyopt.electrical.morphologies
+   :members:           

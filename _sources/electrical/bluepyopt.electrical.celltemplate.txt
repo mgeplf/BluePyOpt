@@ -1,0 +1,5 @@
+bluepyopt.electrical.celltemplate
+=================================
+
+.. automodule:: bluepyopt.electrical.celltemplate
+   :members:           

@@ -1,0 +1,278 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Electrical model API &mdash; bluepyopt 0.1.1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="bluepyopt 0.1.1 documentation" href="index.html"/>
+        <link rel="up" title="Python API" href="api.html"/>
+        <link rel="next" title="&lt;no title&gt;" href="electrical/bluepyopt.electrical.cellevaluator.html"/>
+        <link rel="prev" title="bluepyopt.optimisation" href="optimisation/bluepyopt.optimisation.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bluepyopt
+          
+
+          
+            
+            <img src="_static/bbp.jpg" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="api.html">Python API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="optimisation.html">General optimisation API</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Electrical model API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="electrical/bluepyopt.electrical.celltemplate.html">bluepyopt.electrical.celltemplate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electrical/bluepyopt.electrical.efeatures.html">bluepyopt.electrical.efeatures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electrical/bluepyopt.electrical.locations.html">bluepyopt.electrical.locations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electrical/bluepyopt.electrical.mechanisms.html">bluepyopt.electrical.mechanisms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electrical/bluepyopt.electrical.morphologies.html">bluepyopt.electrical.morphologies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electrical/bluepyopt.electrical.objectives.html">bluepyopt.electrical.objectives</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electrical/bluepyopt.electrical.parameters.html">bluepyopt.electrical.parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electrical/bluepyopt.electrical.parameterscalers.html">bluepyopt.electrical.parameterscalers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electrical/bluepyopt.electrical.protocols.html">bluepyopt.electrical.protocols</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electrical/bluepyopt.electrical.recordings.html">bluepyopt.electrical.recordings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electrical/bluepyopt.electrical.responses.html">bluepyopt.electrical.responses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electrical/bluepyopt.electrical.scorecalculators.html">bluepyopt.electrical.scorecalculators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electrical/bluepyopt.electrical.stimuli.html">bluepyopt.electrical.stimuli</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">bluepyopt</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="api.html">Python API</a> &raquo;</li>
+      
+    <li>Electrical model API</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/electrical.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="electrical-model-api">
+<h1>Electrical model API<a class="headerlink" href="#electrical-model-api" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">bluepyopt.electrical.cellevaluator</span></code></td>
+<td>Cell evaluator class</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="electrical/bluepyopt.electrical.celltemplate.html#module-bluepyopt.electrical.celltemplate" title="bluepyopt.electrical.celltemplate"><code class="xref py py-obj docutils literal"><span class="pre">bluepyopt.electrical.celltemplate</span></code></a></td>
+<td>Cell template class</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="electrical/bluepyopt.electrical.efeatures.html#module-bluepyopt.electrical.efeatures" title="bluepyopt.electrical.efeatures"><code class="xref py py-obj docutils literal"><span class="pre">bluepyopt.electrical.efeatures</span></code></a></td>
+<td>eFeature classes</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="electrical/bluepyopt.electrical.locations.html#module-bluepyopt.electrical.locations" title="bluepyopt.electrical.locations"><code class="xref py py-obj docutils literal"><span class="pre">bluepyopt.electrical.locations</span></code></a></td>
+<td>Location classes</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="electrical/bluepyopt.electrical.mechanisms.html#module-bluepyopt.electrical.mechanisms" title="bluepyopt.electrical.mechanisms"><code class="xref py py-obj docutils literal"><span class="pre">bluepyopt.electrical.mechanisms</span></code></a></td>
+<td>Mechanism classes</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="electrical/bluepyopt.electrical.morphologies.html#module-bluepyopt.electrical.morphologies" title="bluepyopt.electrical.morphologies"><code class="xref py py-obj docutils literal"><span class="pre">bluepyopt.electrical.morphologies</span></code></a></td>
+<td>Morphology classes</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="electrical/bluepyopt.electrical.objectives.html#module-bluepyopt.electrical.objectives" title="bluepyopt.electrical.objectives"><code class="xref py py-obj docutils literal"><span class="pre">bluepyopt.electrical.objectives</span></code></a></td>
+<td>Objective classes</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="electrical/bluepyopt.electrical.parameters.html#module-bluepyopt.electrical.parameters" title="bluepyopt.electrical.parameters"><code class="xref py py-obj docutils literal"><span class="pre">bluepyopt.electrical.parameters</span></code></a></td>
+<td>Parameter classes</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="electrical/bluepyopt.electrical.parameterscalers.html#module-bluepyopt.electrical.parameterscalers" title="bluepyopt.electrical.parameterscalers"><code class="xref py py-obj docutils literal"><span class="pre">bluepyopt.electrical.parameterscalers</span></code></a></td>
+<td>Parameter scaler classes</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="electrical/bluepyopt.electrical.protocols.html#module-bluepyopt.electrical.protocols" title="bluepyopt.electrical.protocols"><code class="xref py py-obj docutils literal"><span class="pre">bluepyopt.electrical.protocols</span></code></a></td>
+<td>Protocol classes</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="electrical/bluepyopt.electrical.recordings.html#module-bluepyopt.electrical.recordings" title="bluepyopt.electrical.recordings"><code class="xref py py-obj docutils literal"><span class="pre">bluepyopt.electrical.recordings</span></code></a></td>
+<td>Recording classes</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="electrical/bluepyopt.electrical.responses.html#module-bluepyopt.electrical.responses" title="bluepyopt.electrical.responses"><code class="xref py py-obj docutils literal"><span class="pre">bluepyopt.electrical.responses</span></code></a></td>
+<td>Responses classes</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="electrical/bluepyopt.electrical.scorecalculators.html#module-bluepyopt.electrical.scorecalculators" title="bluepyopt.electrical.scorecalculators"><code class="xref py py-obj docutils literal"><span class="pre">bluepyopt.electrical.scorecalculators</span></code></a></td>
+<td>Score calculator classes</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="electrical/bluepyopt.electrical.stimuli.html#module-bluepyopt.electrical.stimuli" title="bluepyopt.electrical.stimuli"><code class="xref py py-obj docutils literal"><span class="pre">bluepyopt.electrical.stimuli</span></code></a></td>
+<td>Stimuli classes</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="electrical/bluepyopt.electrical.cellevaluator.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="optimisation/bluepyopt.optimisation.html" class="btn btn-neutral" title="bluepyopt.optimisation" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, BBP, EPFL.
+      Last updated on Feb 15, 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

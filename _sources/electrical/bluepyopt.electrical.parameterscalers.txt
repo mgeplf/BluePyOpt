@@ -1,0 +1,5 @@
+bluepyopt.electrical.parameterscalers
+=====================================
+
+.. automodule:: bluepyopt.electrical.parameterscalers
+   :members:           

@@ -1,0 +1,5 @@
+bluepyopt.electrical.mechanisms
+===============================
+
+.. automodule:: bluepyopt.electrical.mechanisms
+   :members:           

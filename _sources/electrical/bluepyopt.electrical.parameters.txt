@@ -1,0 +1,5 @@
+bluepyopt.electrical.parameters
+===============================
+
+.. automodule:: bluepyopt.electrical.parameters
+   :members:           

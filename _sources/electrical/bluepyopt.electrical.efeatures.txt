@@ -1,0 +1,5 @@
+bluepyopt.electrical.efeatures
+==============================
+
+.. automodule:: bluepyopt.electrical.efeatures
+   :members:           
