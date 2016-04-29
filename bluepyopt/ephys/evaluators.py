@@ -23,9 +23,7 @@ Copyright (c) 2016, EPFL/Blue Brain Project
 # pylint: disable=W0511
 
 # Not sure code below should go in module or class
-import sys
 import types
-import traceback
 import copy_reg
 import logging
 logger = logging.getLogger(__name__)
@@ -43,7 +41,18 @@ class CellEvaluator(object):
             fitness_calculator=None,
             isolate_protocols=True,
             sim=None):
-        """Constructor"""
+        """Constructor
+
+        Args:
+            cell_model(ephys.models.CellModel): cell to evaluate
+            param_names(list of parameter names):
+            fitness_protocols(dict of str -> ephys.protocols.Protocol)
+            fitness_calculator(ephys.objectivescalculators.ObjectivesCalculator)
+            isolate_protocols(bool): whether to use multiprocessing to
+            isolate the simution instance
+            sim(ephys.simulators.NrnSimulator): simulator to use for cell
+            evaluation
+        """
 
         self.cell_model = cell_model
         self.param_names = param_names
@@ -98,6 +107,8 @@ class CellEvaluator(object):
         try:
             return protocol.run(self.cell_model, param_values, sim=self.sim)
         except:
+            import sys
+            import traceback
             raise Exception(
                 "".join(
                     traceback.format_exception(*sys.exc_info())))
